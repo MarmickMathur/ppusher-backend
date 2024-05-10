@@ -34,10 +34,10 @@ main()
     console.log(e);
   });
 async function main() {
-  // await mongoose.connect(
-  //   "mongodb+srv://threesigmas:HelloLadies@cluster0.ddsxkao.mongodb.net/"
-  // );
-  mongoose.connect("mongodb://127.0.0.1:27017/ppusher");
+  await mongoose.connect(
+    "mongodb+srv://threesigmas:HelloLadies@cluster0.ddsxkao.mongodb.net/"
+  );
+  // mongoose.connect("mongodb://127.0.0.1:27017/ppusher");
 }
 
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
