@@ -18,7 +18,7 @@ router.get(
   "/callback",
   passport.authenticate("google", {
     successReturnToOrRedirect:
-      "https://ppusher-backend.onrender.com/auth/google/auth/google/success",
+      "https://ppusher-backend.onrender.com/auth/google/success",
     failureRedirect: "/failure",
     failureFlash: true,
   })
